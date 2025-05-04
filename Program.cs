@@ -43,11 +43,12 @@ namespace Array2DConvertArray1D
 
          // Создание 1D - массива из 2D - массива по строкам
 
-         //ArrayConvert();
+         ArrayConvertOne();
+         ArrayConvertTwo();
          Console.ReadLine();
       }
 
-      private static void ArrayConvert()
+      private static void ArrayConvertOne()
       {
          int row, column, i, j, k = 0;
          int[] array1D = new int[12];
@@ -94,5 +95,13 @@ namespace Array2DConvertArray1D
             Console.Write("[{0}]", array1D[i]);
          }
       }
+      
+      private static void ArrayConvertTwo()
+      {
+         throw new NotImplementedException();
+      }
+
+
+
    }
 }
