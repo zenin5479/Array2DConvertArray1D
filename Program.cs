@@ -41,7 +41,7 @@ namespace Array2DConvertArray1D
             Console.Write(item + " ");
          }
 
-         ArrayConvertThree();
+         //ArrayConvertThree();
          //ArrayConvertOne();
          //ArrayConvertTwo();
          Console.ReadLine();
@@ -135,7 +135,6 @@ namespace Array2DConvertArray1D
 
       private static void ArrayConvertThree()
       {
-
          // Создание 1D - массива из 2D - массива по строкам
          // Создание двумерного массива из 2 строк и трех столбцов
          int[,] int2DArray = new int[2, 3];
