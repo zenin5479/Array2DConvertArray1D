@@ -15,7 +15,7 @@ namespace Array2DConvertArray1D
          int.TryParse(Console.ReadLine(), out column);
          //column = Convert.ToInt32(Console.ReadLine());
          int[,] array2D = new int[row, column];
-         // Создание одномерного массива путем умножения значений строк и столбцов
+         // Создание одномерного массива умножением строк и столбцов
          int[] array1D = new int[row * column];
          Console.WriteLine("Введите последовательно элементы двумерного массива:");
          for (int i = 0; i < row; i++)
