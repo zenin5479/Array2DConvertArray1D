@@ -9,9 +9,10 @@ namespace Array2DConvertArray1D
          // Создание 1D - массива из 2D - массива по строкам
          // Создание двумерного массива из 2 строк и трех столбцов
          int row, column, i, j, k = 0;
-         Console.WriteLine("Введите количество строк и столбцов");
+         Console.WriteLine("Введите количество строк:");
          int.TryParse(Console.ReadLine(), out row);
          //row = Convert.ToInt32(Console.ReadLine());
+         Console.WriteLine("Введите количество столбцов:");
          int.TryParse(Console.ReadLine(), out column);
          //column = Convert.ToInt32(Console.ReadLine());
          int[,] array2D = new int[row, column];
@@ -39,7 +40,7 @@ namespace Array2DConvertArray1D
             Console.WriteLine();
          }
 
-         Console.WriteLine("Одномерный массив:");
+         Console.WriteLine("Одномерный массив созданный по строкам элементов двумерного массива:");
          for (i = 0; i < row; i++)
          {
             for (j = 0; j < column; j++)
