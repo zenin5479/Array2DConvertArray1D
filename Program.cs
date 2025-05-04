@@ -35,7 +35,7 @@ namespace Array2DConvertArray1D
             }
          }
          // Печать элементов массива 1d
-         Console.WriteLine("1D Array Elements : ");
+         Console.WriteLine("Элементы одномерного массива: ");
          foreach (int item in OneDimensionalArray)
          {
             Console.Write(item + " ");
