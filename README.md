@@ -1,1 +1,1 @@
-# Array2DConvertArray1D
+# 2D массив конвертировать в 1D массив
