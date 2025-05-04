@@ -19,24 +19,24 @@ namespace Array2DConvertArray1D
          }
          int index = 0;
          // Получение количества строк двумерного массива
-         int NoOfRows = int2DArray.GetLength(0);
+         int noOfRows = int2DArray.GetLength(0);
          // Получение количества столбцов двумерного массива
-         int NoOfColumns = int2DArray.GetLength(1);
+         int noOfColumns = int2DArray.GetLength(1);
          // Создание трехмерного массива путем умножения значений noOfRows и noOfColumns
-         int[] OneDimensionalArray = new int[NoOfRows * NoOfColumns];
+         int[] oneDimensionalArray = new int[noOfRows * noOfColumns];
 
          // Присвоение элементов 1d-массиву из 2d-массива
-         for (int y = 0; y < NoOfRows; y++)
+         for (int y = 0; y < noOfRows; y++)
          {
-            for (int x = 0; x < NoOfColumns; x++)
+            for (int x = 0; x < noOfColumns; x++)
             {
-               OneDimensionalArray[index] = int2DArray[y, x];
+               oneDimensionalArray[index] = int2DArray[y, x];
                index++;
             }
          }
          // Печать элементов массива 1d
          Console.WriteLine("Элементы одномерного массива: ");
-         foreach (int item in OneDimensionalArray)
+         foreach (int item in oneDimensionalArray)
          {
             Console.Write(item + " ");
          }
