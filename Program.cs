@@ -6,7 +6,7 @@ namespace Array2DConvertArray1D
    {
       static void Main(string[] args)
       {
-         //Creating a 2d Array with 2 rows and three columns
+         // Creating a 2d Array with 2 rows and three columns
          int[,] int2DArray = new int[2, 3];
          Console.Write("Enter 2D Array Elements : ");
          for (int i = 0; i < 2; i++)
@@ -18,24 +18,24 @@ namespace Array2DConvertArray1D
          }
          int index = 0;
          //Getting the no of rows of 2d array 
-         int NoOfRows = int2DArray.GetLength(0);
+         int noOfRows = int2DArray.GetLength(0);
          //Getting the no of columns of the 2d array
-         int NoOfColumns = int2DArray.GetLength(1);
+         int noOfColumns = int2DArray.GetLength(1);
          //Creating 1d Array by multiplying NoOfRows and NoOfColumns
-         int[] OneDimensionalArray = new int[NoOfRows * NoOfColumns];
+         int[] oneDimensionalArray = new int[noOfRows * noOfColumns];
 
          //Assigning the elements to 1d Array from 2d array
-         for (int y = 0; y < NoOfColumns; y++)
+         for (int y = 0; y < noOfColumns; y++)
          {
-            for (int x = 0; x < NoOfRows; x++)
+            for (int x = 0; x < noOfRows; x++)
             {
-               OneDimensionalArray[index] = int2DArray[x, y];
+               oneDimensionalArray[index] = int2DArray[x, y];
                index++;
             }
          }
          //Printing the 1d array elements
          Console.WriteLine("1D Array Elements : ");
-         foreach (int item in OneDimensionalArray)
+         foreach (int item in oneDimensionalArray)
          {
             Console.Write(item + " ");
          }
