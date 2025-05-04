@@ -7,7 +7,6 @@ namespace Array2DConvertArray1D
       static void Main(string[] args)
       {
          ArrayConvert();
-
          Console.ReadLine();
       }
 
