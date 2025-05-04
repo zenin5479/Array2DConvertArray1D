@@ -22,7 +22,7 @@ namespace Array2DConvertArray1D
          int noOfRows = int2DArray.GetLength(0);
          // Получение количества столбцов двумерного массива
          int noOfColumns = int2DArray.GetLength(1);
-         // Создание трехмерного массива путем умножения значений NoOfRows и NoOfColumns
+         // Создание трехмерного массива путем умножения значений noOfRows и noOfColumns
          int[] oneDimensionalArray = new int[noOfRows * noOfColumns];
 
          // Присвоение элементов 1d-массиву из 2d-массива
