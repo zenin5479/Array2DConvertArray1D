@@ -9,7 +9,7 @@ namespace Array2DConvertArray1D
          // Создание 1D - массива из 2D - массива по строкам
          // Создание двумерного массива из 2 строк и трех столбцов
          int[,] int2DArray = new int[2, 3];
-         Console.Write("Ввод элементов двумерного массива: ");
+         Console.WriteLine("Ввод элементов двумерного массива: ");
          for (int i = 0; i < 2; i++)
          {
             for (int j = 0; j < 3; j++)
