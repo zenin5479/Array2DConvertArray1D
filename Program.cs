@@ -6,8 +6,6 @@ namespace Array2DConvertArray1D
    {
       static void Main()
       {
-         // Создание 1D - массива из 2D - массива по строкам
-         // Создание двумерного массива из 2 строк и трех столбцов
          int row;
          Console.WriteLine("Введите количество строк:");
          int.TryParse(Console.ReadLine(), out row);
