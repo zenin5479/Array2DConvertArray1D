@@ -4,7 +4,7 @@ namespace Array2DConvertArray1D
 {
    internal class Program
    {
-      static void Main(string[] args)
+      static void Main()
       {
          // Создание 1D - массива из 2D - массива по строкам
          // Создание двумерного массива из 2 строк и трех столбцов
