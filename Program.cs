@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Channels;
 
 namespace Array2DConvertArray1D
 {
@@ -42,12 +43,30 @@ namespace Array2DConvertArray1D
          }
 
          Console.WriteLine("Одномерный массив созданный по строкам элементов двумерного массива:");
-         int index = 0;
+         int indexColumn = 0;
          for (int i = 0; i < row; i++)
          {
             for (int j = 0; j < column; j++)
             {
-               array1D[index++] = array2D[i, j];
+               array1D[indexColumn++] = array2D[i, j];
+            }
+         }
+
+         for (int i = 0; i < row * column; i++)
+         {
+            //Console.WriteLine("[{0}] = {1}", i, array1D[i]);
+            Console.Write("[{0}]", array1D[i]);
+         }
+
+         Console.WriteLine();
+
+         Console.WriteLine("Одномерный массив созданный по столбцам элементов двумерного массива:");
+         int indexRow = 0;
+         for (int j = 0; j < column; j++)
+         {
+            for (int i = 0; i < row; i++)
+            {
+               array1D[indexRow++] = array2D[i, j];
             }
          }
 
