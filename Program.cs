@@ -41,6 +41,8 @@ namespace Array2DConvertArray1D
             Console.Write(item + " ");
          }
 
+         // Создание 1D - массива из 2D - массива по строкам
+
          //ArrayConvert();
          Console.ReadLine();
       }
