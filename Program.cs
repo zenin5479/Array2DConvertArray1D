@@ -6,10 +6,10 @@ namespace Array2DConvertArray1D
    {
       static void Main(string[] args)
       {
-         // Создание 1D - массива из 2D - массива по столбцам
+         // Создание 1D - массива из 2D - массива по строкам
          // Создание двумерного массива из 2 строк и трех столбцов
          int[,] int2DArray = new int[2, 3];
-         Console.WriteLine("Ввод элементов двумерного массива: ");
+         Console.Write("Ввод элементов двумерного массива: ");
          for (int i = 0; i < 2; i++)
          {
             for (int j = 0; j < 3; j++)
@@ -19,32 +19,30 @@ namespace Array2DConvertArray1D
          }
          int index = 0;
          // Получение количества строк двумерного массива
-         int noOfRows = int2DArray.GetLength(0);
+         int NoOfRows = int2DArray.GetLength(0);
          // Получение количества столбцов двумерного массива
-         int noOfColumns = int2DArray.GetLength(1);
+         int NoOfColumns = int2DArray.GetLength(1);
          // Создание трехмерного массива путем умножения значений noOfRows и noOfColumns
-         int[] oneDimensionalArray = new int[noOfRows * noOfColumns];
+         int[] OneDimensionalArray = new int[NoOfRows * NoOfColumns];
 
          // Присвоение элементов 1d-массиву из 2d-массива
-         for (int y = 0; y < noOfColumns; y++)
+         for (int y = 0; y < NoOfRows; y++)
          {
-            for (int x = 0; x < noOfRows; x++)
+            for (int x = 0; x < NoOfColumns; x++)
             {
-               oneDimensionalArray[index] = int2DArray[x, y];
+               OneDimensionalArray[index] = int2DArray[y, x];
                index++;
             }
          }
          // Печать элементов массива 1d
-         Console.WriteLine("Элементы одномерного массива: ");
-         foreach (int item in oneDimensionalArray)
+         Console.WriteLine("1D Array Elements : ");
+         foreach (int item in OneDimensionalArray)
          {
             Console.Write(item + " ");
          }
 
-         // Создание 1D - массива из 2D - массива по строкам
-
-         ArrayConvertOne();
-         ArrayConvertTwo();
+         //ArrayConvertOne();
+         //ArrayConvertTwo();
          Console.ReadLine();
       }
 
@@ -95,7 +93,7 @@ namespace Array2DConvertArray1D
             Console.Write("[{0}]", array1D[i]);
          }
       }
-      
+
       private static void ArrayConvertTwo()
       {
          // Создание 1D - массива из 2D - массива по столбцам
