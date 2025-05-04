@@ -6,6 +6,13 @@ namespace Array2DConvertArray1D
    {
       static void Main(string[] args)
       {
+         ArrayConvert();
+
+         Console.ReadLine();
+      }
+
+      private static void ArrayConvert()
+      {
          int row, column, i, j, k = 0;
          int[] array1D = new int[12];
          int[,] array2D = new int[12, 12];
@@ -50,8 +57,7 @@ namespace Array2DConvertArray1D
             //Console.WriteLine("[{0}] = {1}", i, array1D[i]);
             Console.Write("[{0}]", array1D[i]);
          }
-
-         Console.ReadLine();
       }
+
    }
 }
