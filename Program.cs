@@ -9,13 +9,14 @@ namespace Array2DConvertArray1D
          // Создание 1D - массива из 2D - массива по строкам
          // Создание двумерного массива из 2 строк и трех столбцов
          int row, column, i, j, k = 0;
-         int[] array1D = new int[12];
-         int[,] array2D = new int[12, 12];
          Console.WriteLine("Введите количество строк и столбцов");
          int.TryParse(Console.ReadLine(), out row);
          //row = Convert.ToInt32(Console.ReadLine());
          int.TryParse(Console.ReadLine(), out column);
          //column = Convert.ToInt32(Console.ReadLine());
+         int[,] array2D = new int[row, column];
+         // Создание одномерного массива путем умножения значений строк и столбцов
+         int[] array1D = new int[row * column];
          Console.WriteLine("Введите элементы двумерного массива");
          for (i = 0; i < row; i++)
          {
