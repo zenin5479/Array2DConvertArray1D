@@ -18,7 +18,7 @@ namespace Array2DConvertArray1D
          int[,] array2D = new int[row, column];
          // Создание одномерного массива путем умножения значений строк и столбцов
          int[] array1D = new int[row * column];
-         Console.WriteLine("Введите элементы двумерного массива");
+         Console.WriteLine("Введите последовательно элементы двумерного массива:");
          for (i = 0; i < row; i++)
          {
             for (j = 0; j < column; j++)
