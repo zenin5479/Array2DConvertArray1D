@@ -148,7 +148,6 @@ namespace Array2DConvertArray1D
          int noOfColumns = int2DArray.GetLength(1);
          // Создание одномерного массива путем умножения значений строк и столбцов
          int[] oneDimensionalArray = new int[noOfRows * noOfColumns];
-
          // Присвоение элементов 1d-массиву из 2d-массива
          for (int y = 0; y < noOfColumns; y++)
          {
